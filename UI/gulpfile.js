@@ -127,6 +127,8 @@ gulp.task('serve', ['build'], function() {
     }
 
     browserSync.init({
+        //To disable browserSync uncomment the line below.
+        //ghostMode:false,
         server: {
             baseDir: hygieia.dist,
             startPath: '/',
